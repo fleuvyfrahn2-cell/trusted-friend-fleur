@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trusted Friend - Fleur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 🌸 PAGE D'ACCUEIL -->
+  <div class="intro">
+    <div class="flower">🌸</div>
+    <h1>Trusted Friend</h1>
+    <p>Ton IA personnelle : Fleur</p>
+    <button onclick="startApp()">Entrer</button>
+  </div>
+
+  <!-- 💬 APPLICATION -->
+  <div class="app hidden" id="app">
+
+    <header>
+      <h2>Fleur 🌸</h2>
+      <button onclick="resetChat()">Reset</button>
+    </header>
+
+    <!-- CHAT -->
+    <div id="chat"></div>
+
+    <!-- INPUT -->
+    <div class="input-box">
+      <input id="userInput" placeholder="Écris à Fleur..." />
+      <button onclick="sendMessage()">Envoyer</button>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+  </html>
