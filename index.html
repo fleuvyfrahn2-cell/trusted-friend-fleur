@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trusted Friend - Fleur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ACCUEIL -->
+  <div class="intro">
+    <h1>🌸 Trusted Friend</h1>
+    <p>Ton IA Fleur</p>
+    <button onclick="startApp()">Entrer</button>
+  </div>
+
+  <!-- APP -->
+  <div id="app" class="hidden">
+
+    <h2>Fleur 🌸</h2>
+
+    <div id="chat"></div>
+
+    <input id="userInput" placeholder="Écris à Fleur...">
+    <button onclick="sendMessage()">Envoyer</button>
+
+    <button onclick="resetChat()">Reset</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
