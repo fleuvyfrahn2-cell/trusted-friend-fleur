@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f1a;
+  color: white;
+}
+
+/* Intro */
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flower {
+  font-size: 60px;
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  background: #7c4dff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* App */
+.hidden {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #1b1b2e;
+}
+
+#chat {
+  height: 70vh;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.user {
+  background: #7c4dff;
+  margin-left: auto;
+}
+
+.ai {
+  background: #333;
+}
+
+/* Input */
+.input-box {
+  display: flex;
+  padding: 10px;
+  background: #1b1b2e;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
